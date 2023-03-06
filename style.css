@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+body {
+  background-image: url("club.jpg");
+  background-color: rgb(43, 35, 50);
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage {
+  font-family: "Press Start 2P", cursive;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.homepage-first-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.homepage-second-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.homepage-third-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2px;
+  height: 250px;
+}
+.players-list {
+  height: 200px;
+}
+.homepage-fourth-container > img {
+  width: 250px;
+  margin-top: 5px;
+}
+button,
+input,
+select {
+  font-family: "Press Start 2P", cursive;
+}
+button {
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  height: 40px;
+}
+button:hover {
+  background-color: brown;
+  color: #fff;
+}
+input {
+  border-radius: 4px;
+  padding: 6px 12px;
+  height: 23px;
+  outline: none;
+}
+input:focus {
+  background-color: rgb(238, 215, 184);
+}
+input:focus::placeholder {
+  color: transparent;
+}
+select {
+  border-radius: 4px;
+  padding: 6px 12px;
+  height: 30px;
+}
+
+.remove-player {
+  color: red;
+  cursor: pointer;
+  font-size: small;
+}
+.remove-player:hover {
+  color: rgb(231, 150, 150);
+}
+.remove-move {
+  color: red;
+  cursor: pointer;
+  font-size: small;
+}
+.remove-move:hover {
+  color: rgb(231, 150, 150);
+}
+.next {
+  color: green;
+  cursor: pointer;
+  font-size: small;
+  font-family: "Press Start 2P", cursive;
+}
+.next:hover {
+  color: greenyellow;
+}
+.gameboard {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.screen {
+  color: aliceblue;
+  width: 350px;
+  height: 200px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font: 1em sans-serif;
+  font-family: "Press Start 2P", cursive;
+}
+.go-on-home {
+  display: none;
+}
+.scoreboard {
+  display: none;
+  font-family: "Press Start 2P", cursive;
+  color: #fff;
+}
+table,
+th,
+td {
+  border: 1px solid #fff;
+  border-collapse: collapse;
+  padding: 8px 18px;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.playerboard {
+  font-family: "Press Start 2P", cursive;
+  color: #fff;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 350px;
+  width: 350px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: 3s all;
+}
+.container div {
+  height: 50%;
+  width: 62px;
+  clip-path: polygon(100% 0, 50% 100%, 0 0);
+  position: absolute;
+  transform: translateX(-50%);
+  transform-origin: bottom;
+  left: 41.25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.dartsfield {
+  cursor: crosshair;
+}
+span {
+  height: 14px;
+  float: inline-end;
+  position: absolute;
+  float: right;
+}
+.textspan {
+  margin-bottom: 120px;
+  color: gray;
+  pointer-events: none;
+  font-size: xx-small;
+  font-weight: bold;
+  font-family: "Press Start 2P", cursive;
+}
+.centerspan {
+  align-self: center;
+  width: 100%;
+}
+.endspan {
+  align-self: flex-start;
+  width: 100%;
+}
+.spanred {
+  background-color: red;
+}
+.spangreen {
+  background-color: green;
+}
+.bullseyewide {
+  background-color: green;
+  color: #000;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  left: 46.6%;
+  top: 40%;
+}
+.bullseye {
+  background-color: red;
+  color: #000;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  left: 48.52%;
+  top: 41.7%;
+}
+
+.container .f20 {
+  background: rgb(19, 7, 30);
+  left: 50%;
+}
+.container .f1 {
+  background: rgb(245, 248, 240);
+  transform: rotate(18deg);
+}
+.container .f18 {
+  background: rgb(19, 7, 30);
+  transform: rotate(36deg);
+}
+.container .f4 {
+  background: rgb(245, 248, 240);
+  transform: rotate(54deg);
+}
+.container .f13 {
+  background: rgb(19, 7, 30);
+  transform: rotate(72deg);
+}
+.container .f6 {
+  background: rgb(245, 248, 240);
+  transform: rotate(90deg);
+}
+.container .f10 {
+  background: rgb(19, 7, 30);
+  transform: rotate(108deg);
+}
+.container .f15 {
+  background: rgb(245, 248, 240);
+  transform: rotate(126deg);
+}
+.container .f2 {
+  background: rgb(19, 7, 30);
+  transform: rotate(144deg);
+}
+.container .f17 {
+  background: rgb(245, 248, 240);
+  transform: rotate(162deg);
+}
+.container .f3 {
+  background: rgb(19, 7, 30);
+  transform: rotate(180deg);
+}
+.container .f19 {
+  background: rgb(245, 248, 240);
+  transform: rotate(198deg);
+}
+.container .f7 {
+  background: rgb(19, 7, 30);
+  transform: rotate(216deg);
+}
+.container .f16 {
+  background: rgb(245, 248, 240);
+  transform: rotate(234deg);
+}
+.container .f8 {
+  background: rgb(19, 7, 30);
+  transform: rotate(252deg);
+}
+.container .f11 {
+  background: rgb(245, 248, 240);
+  transform: rotate(270deg);
+}
+.container .f14 {
+  background: rgb(19, 7, 30);
+  transform: rotate(288deg);
+}
+.container .f9 {
+  background: rgb(245, 248, 240);
+  transform: rotate(306deg);
+}
+.container .f12 {
+  background: rgb(19, 7, 30);
+  transform: rotate(324deg);
+}
+.container .f5 {
+  background: rgb(245, 248, 240);
+  transform: rotate(342deg);
+}
+
+.dart {
+  position: fixed;
+  top: -1vh;
+  font-size: 2rem;
+  transform: translateY(0);
+  animation: fall 3s linear forwards;
+  color: rgb(245, 248, 240);
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(105vh);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .game-container {
+    flex-direction: column;
+    gap: 0px;
+  }
+  table,
+  th,
+  td {
+    padding: 4px 6px;
+    font-size: small;
+    text-align: center;
+  }
+  .homepage-second-container {
+    flex-direction: column;
+  }
+  .darts-head {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 920px) and (min-width: 421px) {
+  .game-container {
+    flex-direction: rw;
+    gap: 0px;
+  }
+  table,
+  th,
+  td {
+    padding: 4px 6px;
+    font-size: small;
+    text-align: center;
+  }
+  .homepage-second-container {
+    flex-direction: column;
+  }
+  .darts-head {
+    font-size: large;
+  }
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Darts</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="homepage">
+      <h1 class="darts-head">🎯 Darts Game 🎯</h1>
+      <div class="homepage-first-container">
+        <h4>Choose game</h4>
+        <select>
+          <option value="Cricket">Cricket</option>
+          <option value="501" disabled>501...</option>
+        </select>
+      </div>
+      <div class="homepage-second-container">
+        <h5>Name</h5>
+        <input id="addPlayerInput" type="text" placeholder="Enter name..." />
+        <button id="addPlayerBtn">Add player</button>
+      </div>
+      <div class="homepage-third-container">
+        <div id="playersList" class="players-list"></div>
+        <button id="startGameBtn">Start Game</button>
+      </div>
+      <div class="homepage-fourth-container">
+        <img src="logo.png" alt="logo" />
+      </div>
+    </div>
+
+    <div class="game-container">
+      <div>
+        <div class="scoreboard"></div>
+        <div class="playerboard"></div>
+      </div>
+      <div class="gameboard">
+        <div class="container">
+          <div id="20" class="dartsfield fieldspan f20">
+            <br /><span class="textspan">20</span>
+            <span id="40" class="dartsfield centerspan spanred"></span
+            ><span id="60" class="dartsfield endspan spanred"></span>
+          </div>
+          <div id="1" class="dartsfield fieldspan f1">
+            <span class="textspan">1</span>
+            <span id="2" class="dartsfield centerspan spangreen"></span
+            ><span id="13" class="dartsfield endspan spangreen"></span>
+          </div>
+          <div id="18" class="dartsfield fieldspan f18">
+            <span class="textspan">18</span
+            ><span id="36" class="dartsfield centerspan spanred"></span
+            ><span id="54" class="dartsfield endspan spanred"></span>
+          </div>
+          <div id="4" class="dartsfield fieldspan f4">
+            <span class="textspan">4</span
+            ><span id="8" class="dartsfield centerspan spangreen"></span
+            ><span id="12" class="dartsfield endspan spangreen"></span>
+          </div>
+          <div id="13" class="dartsfield fieldspan f13">
+            <span class="textspan">13</span
+            ><span id="26" class="dartsfield centerspan spanred"></span
+            ><span id="39" class="dartsfield endspan spanred"></span>
+          </div>
+          <div id="6" class="dartsfield fieldspan f6">
+            <span class="textspan">6</span
+            ><span id="12" class="dartsfield centerspan spangreen"></span
+            ><span id="18" class="dartsfield endspan spangreen"></span>
+          </div>
+          <div id="10" class="dartsfield fieldspan f10">
+            <span class="textspan">10</span
+            ><span id="20" class="dartsfield centerspan spanred"></span
+            ><span id="30" class="dartsfield endspan spanred"></span>
+          </div>
+          <div id="15" class="dartsfield fieldspan f15">
+            <span class="textspan">15</span
+            ><span id="30" class="dartsfield centerspan spangreen"></span
+            ><span id="45" class="dartsfield endspan spangreen"></span>
+          </div>
+          <div id="2" class="dartsfield fieldspan f2">
+            <span class="textspan">2</span
+            ><span id="4" class="dartsfield centerspan spanred"></span
+            ><span id="6" class="dartsfield endspan spanred"></span>
+          </div>
+          <div id="17" class="dartsfield fieldspan f17">
+            <span class="textspan">17</span
+            ><span id="34" class="dartsfield centerspan spangreen"></span
+            ><span id="51" class="dartsfield endspan spangreen"></span>
+          </div>
+          <div id="3" class="dartsfield fieldspan f3">
+            <span class="textspan">3</span
+            ><span id="6" class="dartsfield centerspan spanred"></span
+            ><span id="9" class="dartsfield endspan spanred"></span>
+          </div>
+          <div id="19" class="dartsfield fieldspan f19">
+            <span class="textspan">19</span
+            ><span id="38" class="dartsfield centerspan spangreen"></span
+            ><span id="57" class="dartsfield endspan spangreen"></span>
+          </div>
+          <div id="7" class="dartsfield fieldspan f7">
+            <span class="textspan">7</span
+            ><span id="14" class="dartsfield centerspan spanred"></span
+            ><span id="21" class="dartsfield endspan spanred"></span>
+          </div>
+          <div id="16" class="dartsfield fieldspan f16">
+            <span class="textspan">16</span
+            ><span id="32" class="dartsfield centerspan spangreen"></span
+            ><span id="48" class="dartsfield endspan spangreen"></span>
+          </div>
+          <div id="8" class="dartsfield fieldspan f8">
+            <span class="textspan">8</span
+            ><span id="16" class="dartsfield centerspan spanred"></span
+            ><span id="24" class="dartsfield endspan spanred"></span>
+          </div>
+          <div id="11" class="dartsfield fieldspan f11">
+            <span class="textspan">11</span
+            ><span id="22" class="dartsfield centerspan spangreen"></span
+            ><span id="33" class="dartsfield endspan spangreen"></span>
+          </div>
+          <div id="14" class="dartsfield fieldspan f14">
+            <span class="textspan">14</span
+            ><span id="28" class="dartsfield centerspan spanred"></span
+            ><span id="42" class="dartsfield endspan spanred"></span>
+          </div>
+          <div id="9" class="dartsfield fieldspan f9">
+            <span class="textspan">9</span
+            ><span id="18" class="dartsfield centerspan spangreen"></span
+            ><span id="27" class="dartsfield endspan spangreen"></span>
+          </div>
+          <div id="12" class="dartsfield fieldspan f12">
+            <span class="textspan">12</span
+            ><span id="24" class="dartsfield centerspan spanred"></span
+            ><span id="36" class="dartsfield endspan spanred"></span>
+          </div>
+          <div id="5" class="dartsfield fieldspan f5">
+            <span class="textspan">2</span
+            ><span id="10" class="dartsfield centerspan spangreen"></span
+            ><span id="15" class="dartsfield endspan spangreen"></span>
+          </div>
+          <h1 id="25" class="dartsfield bullseyewide fieldspan">
+            <h1 id="50" class="dartsfield bullseye fieldspan"></h1>
+          </h1>
+        </div>
+      </div>
+      <div class="screen">Player one move</div>
+      <button class="go-on-home" onclick="goOnHomePage();">
+        Go on home page
+      </button>
+      <div>
+        <div class="scoreboard"></div>
+        <div class="playerboard"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
